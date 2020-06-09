@@ -166,8 +166,8 @@ include("config.php");
 				  <span class='glyphicon glyphicon-ban-circle'></span>
 				  Hapus</a>
 				  <?php
-				$query1=mysql_connect("localhost","root","");
-				mysql_select_db("kefe",$query1);
+				$query1=mysql_connect("localhost","id13990263_root","Kefeee333Admin2020");
+				mysql_select_db("id13990263_kefe",$query1);
 
 				  $cari = mysql_query("SELECT order_status from orderdetails where user_id='$user_id'");
 				  $status = mysql_fetch_assoc($cari);

@@ -25,7 +25,7 @@ include("../config.php");
 	extract($edit_row);
 	$_SESSION['user_id'];
 
-	$connection = mysqli_connect('localhost', 'root', '', 'kefe');
+	$connection = mysqli_connect('localhost', 'id13990263_root', 'Kefeee333Admin2020', 'id13990263_kefe');
 
 $status = mysqli_query($connection,"UPDATE orderdetails SET order_status='Lunas' WHERE user_id='11'");
 header("location: ../customers.php")

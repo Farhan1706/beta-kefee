@@ -1,9 +1,9 @@
 <?php
 
-	$DB_HOST = '127.0.0.1';
-	$DB_USER = 'root';
-	$DB_PASS = '';
-	$DB_NAME = 'kefe';
+	$DB_HOST = 'localhost';
+	$DB_USER = 'id13990263_root';
+	$DB_PASS = 'Kefeee333Admin2020';
+	$DB_NAME = 'id13990263_kefe';
 	
 	try{
 		$DB_con = new PDO("mysql:host={$DB_HOST};dbname={$DB_NAME}",$DB_USER,$DB_PASS);

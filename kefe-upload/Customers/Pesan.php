@@ -76,8 +76,8 @@ $pemesan=$_SESSION['pemesan'];
             <div class="row">
             <!-- LIST BARANG -->
             <?php            
-            $query1=mysql_connect("localhost","root","");
-            mysql_select_db("kefe",$query1);
+            $query1=mysql_connect("localhost","id13990263_root","Kefeee333Admin2020");
+            mysql_select_db("id13990263_kefe",$query1);
 
             $start=0;
             $limit=8;
@@ -123,8 +123,8 @@ $pemesan=$_SESSION['pemesan'];
         </div>
     </footer>
     <?php
-    $query1=mysql_connect("localhost","root","");
-    mysql_select_db("kefe",$query1);
+    $query1=mysql_connect("localhost","id13990263_root","Kefeee333Admin2020");
+    mysql_select_db("id13990263_kefe",$query1);
     $start=0;
     $limit=8;
     if(isset($_GET['id']))

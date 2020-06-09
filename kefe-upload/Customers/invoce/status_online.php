@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-$query1=mysql_connect("localhost","root","");
-mysql_select_db("kefe",$query1);
+$query1=mysql_connect("localhost","id13990263_root","Kefeee333Admin2020");
+mysql_select_db("id13990263_kefe",$query1);
 
 $no_meja=$_SESSION['Meja'];
 

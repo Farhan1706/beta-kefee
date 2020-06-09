@@ -22,8 +22,8 @@ $user_id = $_SESSION['Meja'];
 // Start Masukan Data Barang Midtrans
 $no_meja=$_SESSION['Meja'];
 $pemesan=$_SESSION['pemesan'];
-$query1=mysql_connect("localhost","root","");
-mysql_select_db("kefe",$query1);
+$query1=mysql_connect("localhost","id13990263_root","Kefeee333Admin2020");
+mysql_select_db("id13990263_kefe",$query1);
 $data_sum = mysql_query("select SUM(order_total) as datasum from orderdetails where user_id='$no_meja'"); $bayar = mysql_fetch_assoc($data_sum);
 $pembayaran_jumlah = $bayar['datasum'];
 

@@ -2,8 +2,8 @@
 session_start();
 $no_meja=$_SESSION['Meja'];
 $pemesan=$_SESSION['pemesan'];
-$query1=mysql_connect("localhost","root","");
-mysql_select_db("kefe",$query1);
+$query1=mysql_connect("localhost","id13990263_root","Kefeee333Admin2020");
+mysql_select_db("id13990263_kefe",$query1);
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
