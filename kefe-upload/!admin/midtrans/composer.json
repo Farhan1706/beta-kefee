@@ -1,0 +1,15 @@
+{
+    "name": "keefeeee/keefeeee",
+    "description": "Pembayaran Keefeee goods and beverage",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Farhan Naufal",
+            "email": "nori876bg@gmail.com"
+        }
+    ],
+    "require": {
+        "veritrans/veritrans-php": "^1.2"
+    }
+}
