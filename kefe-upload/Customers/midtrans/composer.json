@@ -1,12 +1,12 @@
 {
-    "name": "keefeeee/keefeeee",
-    "description": "Pembayaran Keefeee goods and beverage",
+    "name": "keefee/keefee",
+    "description": "Payment Gateway untuk KeFee",
     "type": "project",
     "license": "GPL",
     "authors": [
         {
             "name": "Farhan Naufal",
-            "email": "nori876bg@gmail.com"
+            "email": "kefeee333@gmail.com"
         }
     ],
     "require": {

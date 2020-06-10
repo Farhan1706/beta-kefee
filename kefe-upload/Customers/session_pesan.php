@@ -4,7 +4,7 @@ session_start();
 ?>
 <?php
 
-include("../!admin/database.php");
+include("db_conection.php");
 
 if(isset($_POST['Meja']))
 {

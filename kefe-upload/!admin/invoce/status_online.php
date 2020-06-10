@@ -25,7 +25,7 @@ include("../config.php");
 	extract($edit_row);
 	$_SESSION['user_id'];
 
-	$stmt_delete = $DB_con->prepare('update orderdetails set order_status="Lunas" WHERE user_id =:user_id');
+	$stmt_delete = $DB_con->prepare('update orderdetails set order_status="Online" WHERE user_id =:user_id');
 	$stmt_delete->bindParam(':user_id',$_GET['view_id']);
 	$stmt_delete->execute();
 	echo "<script>location.href='../customers.php'</script>";

@@ -90,20 +90,19 @@ session_start();
     		<a class="nav-link text-black mt-2" href="#" ><h3>Dashboard</h3></a><hr class="bg-secondary mt-1"></li>
             <?php
             include("db_conection.php");
-$sql    ="SELECT count(order_id) as total FROM orderdetails";
-$query    =mysqli_query($dbcon,$sql);
-while ($r=mysqli_fetch_array($query)){
-    $count=$r['total'];
-    $ngitung= 20 - $count;
-}
+            $sql    ="SELECT count(order_id) as total FROM orderdetails";
+            $query    =mysqli_query($dbcon,$sql);
+            while ($r=mysqli_fetch_array($query)){
+                $count=$r['total'];
+                $ngitung= 20 - $count;
+            };
 
-$sqli    ="SELECT count(item_id) as jumlah FROM items";
-$querys    =mysqli_query($dbcon,$sqli);
-while ($s=mysqli_fetch_array($querys)){
-    $counts=$s['jumlah'];
-    }
-?>
-	
+            $sqli    ="SELECT count(item_id) as jumlah FROM items";
+            $querys    =mysqli_query($dbcon,$sqli);
+            while ($s=mysqli_fetch_array($querys)){
+                $counts=$s['jumlah'];
+                };
+            ?>
 			<div class="row text-center">
                 <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i></span>
                     <h4 class="section-heading">Jumlah Pesanan</h4>

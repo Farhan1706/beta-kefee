@@ -33,7 +33,7 @@ session_start();
 <?php
  require_once(dirname(__FILE__) . '/midtrans/vendor/autoload.php');
  
- Veritrans_Config::$serverKey = "SB-Mid-server-JyBIr1T-w4HUwWBdqDEhpXDn";
+ Veritrans_Config::$serverKey = "SB-Mid-server--pael-L3qaTO_9YOXdGC8UC2";
 
  Veritrans_Config::$isSanitized = true;
 
@@ -290,7 +290,6 @@ include("config.php");
 		
     </div>
     <!-- /#wrapper -->
-
 	
 	<!-- Mediul Modal -->
         <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal1">
@@ -397,11 +396,14 @@ include("config.php");
         return true;
     }    
 </script>
-
+<?php echo"<script>a=$user_id</script>"; ?>
 <!-- JS Midtrans Start -->
-<script src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="SB-Mid-client-18qsaBv_sl9FnwWJ"></script>
+<script src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="SB-Mid-client-jKjWuP4RX9n6LwaG"></script>
     <script type="text/javascript">
       document.getElementById('pay-button').onclick = function(){
+		var popupwin = window.open('invoce/status_online.php?view_id='+a,'anyname','width=10,height=1,left=5,top=3');
+        setTimeout(function() { popupwin.close();}, 500);
+
         snap.pay('<?=$snapToken?>', {
           onSuccess: function(result){
             document.getElementById('result-json').innerHTML += JSON.stringify(result, null, 2);

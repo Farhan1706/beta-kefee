@@ -33,15 +33,11 @@ session_start();
 	
 	if(isset($_GET['order_id']))
 	{
-		
-		
-		
-	
 		$stmt_delete = $DB_con->prepare('delete from orderdetails WHERE user_id =:user_id');
 		$stmt_delete->bindParam(':user_id',$_GET['order_id']);
 		$stmt_delete->execute();
 		
-		header("Location: customers.php");
+		echo"<script>location.href='customers.php'</script>";
 	}
 
 ?>
@@ -166,7 +162,7 @@ include("config.php");
 				  <span class='glyphicon glyphicon-ban-circle'></span>
 				  Hapus</a>
 				  <?php
-				$query1=mysql_connect("localhost","id13990263_root","Kefeee333Admin2020");
+				$query1=mysql_connect("localhost","id13990263_root","Farhan1706!N");
 				mysql_select_db("id13990263_kefe",$query1);
 
 				  $cari = mysql_query("SELECT order_status from orderdetails where user_id='$user_id'");

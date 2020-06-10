@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit9b274c18b2140917dbecb7b6733e224e
+class ComposerStaticInit26e8f9d6b0bd81370a8a5593444b1427
 {
     public static $classMap = array (
         'SnapIntegrationTest' => __DIR__ . '/..' . '/veritrans/veritrans-php/tests/integration/SnapIntegrationTest.php',
@@ -38,7 +38,7 @@ class ComposerStaticInit9b274c18b2140917dbecb7b6733e224e
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->classMap = ComposerStaticInit9b274c18b2140917dbecb7b6733e224e::$classMap;
+            $loader->classMap = ComposerStaticInit26e8f9d6b0bd81370a8a5593444b1427::$classMap;
 
         }, null, ClassLoader::class);
     }

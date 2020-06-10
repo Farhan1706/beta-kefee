@@ -2,13 +2,29 @@
 session_start();
 $user_name = $_SESSION['pemesan'];
 $user_id = $_SESSION['Meja'];
+// Start Masukan Data Barang Midtrans
+$pemesan=$_SESSION['pemesan'];
+$link = mysql_connect('localhost','id13990263_root','Farhan1706!N');
+            if (!$link) {
+                die('Not connected : ' . mysql_error());
+            }
+            
+            $db_selected = mysql_select_db('id13990263_kefe', $link);
+            if (!$db_selected) {
+                die ('Can\'t use foo : ' . mysql_error());
+            }
+$data_sum = mysql_query("select SUM(order_total) as datasum from orderdetails where user_id='$user_id'"); $bayar = mysql_fetch_assoc($data_sum);
+$pembayaran_jumlah = $bayar['datasum'];
+if($pembayaran_jumlah==null){
+    echo("<script>href.location='Pesan.php?msg=blok'</script>");
+}
 ?>
 
 <!-- Midtrans Start -->
 <?php
  require_once(dirname(__FILE__) . '/midtrans/vendor/autoload.php');
  
- Veritrans_Config::$serverKey = "SB-Mid-server-JyBIr1T-w4HUwWBdqDEhpXDn";
+ Veritrans_Config::$serverKey = "SB-Mid-server--pael-L3qaTO_9YOXdGC8UC2";
 
  Veritrans_Config::$isSanitized = true;
 
@@ -16,16 +32,8 @@ $user_id = $_SESSION['Meja'];
 
  $transaction_details = array(
    'order_id' => rand(),
-   'gross_amount' => 40000, 
+   'gross_amount' => 0.01, 
  );
-
-// Start Masukan Data Barang Midtrans
-$no_meja=$_SESSION['Meja'];
-$pemesan=$_SESSION['pemesan'];
-$query1=mysql_connect("localhost","id13990263_root","Kefeee333Admin2020");
-mysql_select_db("id13990263_kefe",$query1);
-$data_sum = mysql_query("select SUM(order_total) as datasum from orderdetails where user_id='$no_meja'"); $bayar = mysql_fetch_assoc($data_sum);
-$pembayaran_jumlah = $bayar['datasum'];
 
 
 
@@ -118,7 +126,7 @@ $pembayaran_jumlah = $bayar['datasum'];
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Brand</title>
+    <title>Pesanan - KeFee</title>
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
@@ -151,7 +159,7 @@ $pembayaran_jumlah = $bayar['datasum'];
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="index.php">Halaman Awal</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="index.php?#about">Tentang kami</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="index.php?#contact">Lokasi</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#">Pesan</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="Pesan.php">Pesan</a></li>
                 </ul>
             </div>
         </div>
@@ -286,7 +294,7 @@ $pembayaran_jumlah = $bayar['datasum'];
     </div>
 
     <!-- JS Midtrans Start -->
-    <script src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="SB-Mid-client-18qsaBv_sl9FnwWJ"></script>
+    <script src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="SB-Mid-client-jKjWuP4RX9n6LwaG"></script>
     <script type="text/javascript">
       document.getElementById('pay-button').onclick = function(){
         var popupwin = window.open('invoce/status_online.php','anyname','width=10,height=1,left=5,top=3');

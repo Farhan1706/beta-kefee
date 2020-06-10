@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6864b42f96a1bb9446906bb7fc194a24",
+    "content-hash": "8dac7eb3d83fe2bdffc87e084cb4495b",
     "packages": [
         {
             "name": "veritrans/veritrans-php",

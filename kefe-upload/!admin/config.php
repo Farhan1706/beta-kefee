@@ -2,7 +2,7 @@
 
 	$DB_HOST = 'localhost';
 	$DB_USER = 'id13990263_root';
-	$DB_PASS = 'Kefeee333Admin2020';
+	$DB_PASS = 'Farhan1706!N';
 	$DB_NAME = 'id13990263_kefe';
 	
 	try{

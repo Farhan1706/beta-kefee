@@ -96,7 +96,24 @@ die();
             </button>
         </div>
         <div class="modal-body">
-            <centeR>Terima Kasih Telah Berbelanja</br> Kami Tunggu Kunjungan Anda Selanjutnya.</center>
+            <center>Terima Kasih Telah Berbelanja</br> Kami Tunggu Kunjungan Anda Selanjutnya.</center>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="warning" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Pesanan Selesai</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body col">
+            <center><img src="../assets/img/warning.png" width="20" height="20">Peringatan<img src="../assets/img/warning.png" width="20" height="20"></br>Masukan Terlebih Dahulu Nomor Meja</center>
         </div>
         </div>
     </div>
@@ -115,6 +132,13 @@ die();
     echo('<script type="text/javascript">');
     echo('$(window).on("load",function(){');
     echo('    $("#invoice").modal("show");');
+    echo('});');
+    echo('</script>');
+        }
+        elseif($_GET['msg']=="warning"){
+    echo('<script type="text/javascript">');
+    echo('$(window).on("load",function(){');
+    echo('    $("#warning").modal("show");');
     echo('});');
     echo('</script>');
         }

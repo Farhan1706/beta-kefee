@@ -55,8 +55,7 @@ $user_id=$_SESSION['Meja'];
 		$stmt_delete->bindParam(':user_id',$_GET['update_id']);
 		$stmt_delete->execute();
 		echo "<script>alert('Item/s successfully ordered!')</script>";	
-		
-		header("Location: Terpesan.php");
+        echo"<script>window.location.href = 'Terpesan.php';</script>";
 	}
 
 ?>
@@ -67,7 +66,7 @@ $user_id=$_SESSION['Meja'];
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Brand</title>
+    <title>Daftar Pesanan - KeFee</title>
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
@@ -99,7 +98,7 @@ $user_id=$_SESSION['Meja'];
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="index.php">Halaman Awal</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="index.php?#about">Tentang kami</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="index.php?#contact">Lokasi</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#">Pesan</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="Pesan.php">Pesan</a></li>
                 </ul>
             </div>
         </div>

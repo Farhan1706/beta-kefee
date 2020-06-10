@@ -1,9 +1,14 @@
 <?php
+$dbcon = mysql_connect('localhost', 'id13990263_root', 'Farhan1706!N');
+if (!$dbcon) {
+    die('Not connected : ' . mysql_error());
+}
 
+$db_selected = mysql_select_db('id13990263_kefe', $dbcon);
+if (!$db_selected) {
+    die ('Can\'t use foo : ' . mysql_error());
+}
 
-
-$dbcon=mysqli_connect("localhost","id13990263_root","Kefeee333Admin2020");
-
-mysqli_select_db($dbcon,"id13990263_kefe");
-
+// $dbcon=mysqli_connect("localhost","id13990263_root","Farhan1706!N");
+// mysqli_select_db($dbcon,"id13990263_kefe");
 ?>

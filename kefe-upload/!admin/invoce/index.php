@@ -25,7 +25,7 @@ include("../config.php");
 	extract($edit_row);
 	$_SESSION['user_id'];
 
-	$connection = mysqli_connect('localhost', 'id13990263_root', 'Kefeee333Admin2020', 'id13990263_kefe');
+	$connection = mysqli_connect('localhost', 'id13990263_root', 'Farhan1706!N', 'id13990263_kefe');
 	$status = mysqli_query($connection,"UPDATE orderdetails SET order_status='Bayar' WHERE user_id='$user_id'");
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -165,9 +165,12 @@ Phone: (555) 555-5555</textarea>
 </body>
 
 </html>
+<?php
+echo "<script>a=$user_id</script>";
+?>
 <script>
 function myFunction() {
   window.print();
-	location.href = "status.php?view_id=$user_id";
+	location.href = "status.php?view_id="+a;
 }
 </script>

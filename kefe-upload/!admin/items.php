@@ -26,7 +26,7 @@ session_start();
 		$stmt_delete->bindParam(':item_id',$_GET['delete_id']);
 		$stmt_delete->execute();
 		
-		header("Location: items.php");
+		echo"<script>href.location='items.php'</script>";
 	}
 
 ?>

@@ -1,8 +1,8 @@
 <?php
 session_start();
-if(!$_SESSION['Meja'])
+if(!isset($_SESSION['Meja']))
 {
-    header("location:destroy.php");
+    header("location:Meja.php?msg=warning");
     die();
 }
 
@@ -20,7 +20,7 @@ $pemesan=$_SESSION['pemesan'];
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Brand</title>
+    <title>Menu - KeFee</title>
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
@@ -52,7 +52,7 @@ $pemesan=$_SESSION['pemesan'];
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="index.php">Halaman Awal</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="index.php?#about">Tentang kami</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="index.php?#contact">Lokasi</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#">Pesan</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="Pesan.php">Pesan</a></li>
                 </ul>
             </div>
         </div>
@@ -75,9 +75,20 @@ $pemesan=$_SESSION['pemesan'];
             </div>
             <div class="row">
             <!-- LIST BARANG -->
-            <?php            
-            $query1=mysql_connect("localhost","id13990263_root","Kefeee333Admin2020");
-            mysql_select_db("id13990263_kefe",$query1);
+            <?php  
+            $link = mysql_connect('localhost', 'id13990263_root', 'Farhan1706!N');
+            if (!$link) {
+                die('Not connected : ' . mysql_error());
+            }
+            
+            $db_selected = mysql_select_db('id13990263_kefe', $link);
+            if (!$db_selected) {
+                die ('Can\'t use foo : ' . mysql_error());
+            }
+            
+
+            // $query1=mysql_connect("localhost","id13990263_root","o|LZQ?UEMI6\1=j[");
+            // mysql_select_db("id13990263_kefe",$query1);
 
             $start=0;
             $limit=8;
@@ -123,8 +134,16 @@ $pemesan=$_SESSION['pemesan'];
         </div>
     </footer>
     <?php
-    $query1=mysql_connect("localhost","id13990263_root","Kefeee333Admin2020");
-    mysql_select_db("id13990263_kefe",$query1);
+    $link = mysql_connect('localhost', 'id13990263_root', 'Farhan1706!N');
+    if (!$link) {
+        die('Not connected : ' . mysql_error());
+    }
+    
+    $db_selected = mysql_select_db('id13990263_kefe', $link);
+    if (!$db_selected) {
+        die ('Can\'t use foo : ' . mysql_error());
+    }
+    
     $start=0;
     $limit=8;
     if(isset($_GET['id']))
@@ -198,6 +217,24 @@ $pemesan=$_SESSION['pemesan'];
 	  </div>
 	</div>
 	<!-- END Modal -->
+
+    <!-- Modal START -->
+	<div class="modal fade" id="blok" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="exampleModalLongTitle">Proses Pemesanan</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			Belum Membeli Apapun, Silahkan Memesan Terlebih Dahulu
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<!-- END Modal -->
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
@@ -216,6 +253,13 @@ $pemesan=$_SESSION['pemesan'];
     echo('<script type="text/javascript">');
     echo('$(window).on("load",function(){');
     echo('    $("#keranjang").modal("show");');
+    echo('});');
+    echo('</script>');
+        }
+        elseif($_GET['msg']=="blok"){
+    echo('<script type="text/javascript">');
+    echo('$(window).on("load",function(){');
+    echo('    $("#blok").modal("show");');
     echo('});');
     echo('</script>');
         }
