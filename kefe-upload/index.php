@@ -41,8 +41,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="text-uppercase section-heading">Menu</h2>
-                    <h3 class="section-subheading text-muted">Berikut Menu Andalan Kami</h3>
+                    <h2 class="text-uppercase section-heading">Display</h2>
+                    <h3 class="section-subheading text-muted">Tempat Bersantai & Pembawa Keceriaan</h3>
                 </div>
             </div>
             <div class="row">
@@ -52,8 +52,8 @@
                             <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
                         </div><img class="img-fluid" src="assets/img/portfolio/1-thumbnail.jpg"></a>
                     <div class="portfolio-caption">
-                        <h4>Beef Steak</h4>
-                        <p class="text-muted">Hidangan Olahan Daging</p>
+                        <h4>Cozy</h4>
+                        <p class="text-muted">Tempat Bersantai Yang Asik</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 portfolio-item">
@@ -62,8 +62,8 @@
                             <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
                         </div><img class="img-fluid" src="assets/img/portfolio/2-thumbnail.jpg"></a>
                     <div class="portfolio-caption">
-                        <h4>Explore</h4>
-                        <p class="text-muted">Graphic Design</p>
+                        <h4>Good Food</h4>
+                        <p class="text-muted">Menghidangkan Makanan Terbaik</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 portfolio-item">
@@ -72,8 +72,8 @@
                             <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
                         </div><img class="img-fluid" src="assets/img/portfolio/3-thumbnail.jpg"></a>
                     <div class="portfolio-caption">
-                        <h4>Finish</h4>
-                        <p class="text-muted">Identity</p>
+                        <h4>Good Mood</h4>
+                        <p class="text-muted">Mengembalikan Keceriaan</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 portfolio-item">
@@ -82,8 +82,8 @@
                             <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
                         </div><img class="img-fluid" src="assets/img/portfolio/4-thumbnail.jpg"></a>
                     <div class="portfolio-caption">
-                        <h4>Lines</h4>
-                        <p class="text-muted">Branding</p>
+                        <h4>Beautiful Place</h4>
+                        <p class="text-muted">Dihadapkan Menuju Keasrian</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 portfolio-item">
@@ -92,8 +92,8 @@
                             <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
                         </div><img class="img-fluid img-fluid" src="assets/img/portfolio/5-thumbnail.jpg"></a>
                     <div class="portfolio-caption">
-                        <h4>Southwest</h4>
-                        <p class="text-muted">Website Design</p>
+                        <h4>Memorable</h4>
+                        <p class="text-muted">Memberikan Kesan Khusus</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 portfolio-item">
@@ -102,10 +102,10 @@
                             <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
                         </div><img class="img-fluid" src="assets/img/portfolio/6-thumbnail.jpg"></a>
                     <div class="portfolio-caption">
-                        <h4>Window</h4>
-                        <p class="text-muted">Photography</p>
+                        <h4>Instagramable</h4>
+                        <p class="text-muted">Tempat Ciamik Bagi Pecinta Photografi</p>
                     </div>
-                </div><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger col-sm" role="button" href="Daftar Menu.php?#portfolio" style="padding-left: 35px;font-family: 'Kaushan Script', cursive;">Lihat Lebih banyak</a></div>
+                </div><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger col-sm" role="button" style="padding-left: 35px;font-family: 'Kaushan Script', cursive;">Datang & Buktikan Sendiri!</a></div>
         </div>
     </section>
     <section data-aos="fade" id="about">
@@ -167,10 +167,11 @@
     <section data-aos="fade" id="team" class="bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4">
-                    <div class="team-member"><img class="rounded-circle mx-auto" src="assets/img/team/1.jpg">
-                        <h4>Kay Garland</h4>
-                        <p class="text-muted">Lead Designer</p>
+                <div class="col">
+                    <div class="team-member">
+                        <!-- <img class="rounded-circle mx-auto" src="assets/img/team/1.jpg"> -->
+                        <h4>Farhan Naufal</h4>
+                        <p class="text-muted">Lead Designer & Developer</p>
                         <ul class="list-inline social-buttons">
                             <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
                             <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -178,21 +179,11 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="team-member"><img class="rounded-circle mx-auto" src="assets/img/team/2.jpg">
-                        <h4>Larry Parker</h4>
-                        <p class="text-muted">Lead Marketer</p>
-                        <ul class="list-inline social-buttons">
-                            <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member"><img class="rounded-circle mx-auto" src="assets/img/team/3.jpg">
-                        <h4>Diana Pertersen</h4>
-                        <p class="text-muted">Lead Developer</p>
+                <div class="col">
+                    <div class="team-member">
+                        <!-- <img class="rounded-circle mx-auto" src="assets/img/team/2.jpg"> -->
+                        <h4>Yoga Zidan R</h4>
+                        <p class="text-muted">Co-Lead</p>
                         <ul class="list-inline social-buttons">
                             <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
                             <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -218,7 +209,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="text-uppercase section-heading">Temukan Kami di</h2>
-                    <h3 class="section-subheading text-muted">Jalan - Jalan Bandung</h3><iframe allowfullscreen="" frameborder="0" width="100%" height="400" src="https://www.google.com/maps/embed/v1/place?q=Paris%2C+France&amp;zoom=11"></iframe></div>
+                    <h3 class="section-subheading text-muted">Jalan - Jalan Bandung</h3><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.696372614232!2d107.62112011474328!3d-6.926850194995178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e7d5693c9035%3A0x1aaf6836aea643c7!2sKozi%203.2%20at%20Malaka%20Hotel!5e0!3m2!1sen!2sid!4v1591856788652!5m2!1sen!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -261,15 +252,9 @@
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
-                                    <h2 class="text-uppercase">Beef Steak</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img src="assets/img/portfolio/1-full.jpg" class="img-fluid d-block mx-auto">
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
-                                        cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-unstyled">
-                                        <li>Date: January 2017</li>
-                                        <li>Client: Threads</li>
-                                        <li>Category: Illustration</li>
-                                    </ul><button class="btn btn-primary" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button></div>
+                                    <h2 class="text-uppercase">Cozy</h2>
+                                    <p class="item-intro text-muted">Tempat Nyaman Anda</p><img src="assets/img/portfolio/1-thumbnail.jpg" class="img-fluid d-block mx-auto">
+                                    <button class="btn btn-primary" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button></div>
                             </div>
                         </div>
                     </div>
@@ -285,15 +270,9 @@
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img src="assets/img/portfolio/2-full.jpg" class="img-fluid d-block mx-auto">
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
-                                        cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-unstyled">
-                                        <li>Date: January 2017</li>
-                                        <li>Client: Threads</li>
-                                        <li>Category: Illustration</li>
-                                    </ul><button class="btn btn-primary" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button></div>
+                                    <h2 class="text-uppercase">Food</h2>
+                                    <p class="item-intro text-muted">Makanan adalah kesamaan kita, sebuah pengalaman yang universal. </br>-James Beard-</p><img src="assets/img/portfolio/2-thumbnail.jpg" class="img-fluid d-block mx-auto">
+                                    <button class="btn btn-primary" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button></div>
                             </div>
                         </div>
                     </div>
@@ -309,15 +288,9 @@
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img src="assets/img/portfolio/3-full.jpg" class="img-fluid d-block mx-auto">
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
-                                        cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-unstyled">
-                                        <li>Date: January 2017</li>
-                                        <li>Client: Threads</li>
-                                        <li>Category: Illustration</li>
-                                    </ul><button class="btn btn-primary" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button></div>
+                                    <h2 class="text-uppercase">Good Mood</h2>
+                                    <p class="item-intro text-muted">Jadikan Sebagai Mood Booster</p><img src="assets/img/portfolio/3-thumbnail.jpg" class="img-fluid d-block mx-auto">
+                                    <button class="btn btn-primary" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button></div>
                             </div>
                         </div>
                     </div>
@@ -333,15 +306,9 @@
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img src="assets/img/portfolio/4-full.jpg" class="img-fluid d-block mx-auto">
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
-                                        cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-unstyled">
-                                        <li>Date: January 2017</li>
-                                        <li>Client: Threads</li>
-                                        <li>Category: Illustration</li>
-                                    </ul><button class="btn btn-primary" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button></div>
+                                    <h2 class="text-uppercase">Beautiful Place</h2>
+                                    <p class="item-intro text-muted">Nikmati Kenyamanan Serta Keasrian Suasana</p><img src="assets/img/portfolio/4-thumbnail.jpg" class="img-fluid d-block mx-auto">
+                                    <button class="btn btn-primary" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button></div>
                             </div>
                         </div>
                     </div>
@@ -357,15 +324,9 @@
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img src="assets/img/portfolio/5-full.jpg" class="img-fluid d-block mx-auto">
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
-                                        cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-unstyled">
-                                        <li>Date: January 2017</li>
-                                        <li>Client: Threads</li>
-                                        <li>Category: Illustration</li>
-                                    </ul><button class="btn btn-primary" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button></div>
+                                    <h2 class="text-uppercase">Memorable</h2>
+                                    <p class="item-intro text-muted">Memberikan Kesan Pada Hati Anda</p><img src="assets/img/portfolio/5-thumbnail.jpg" class="img-fluid d-block mx-auto">
+                                    <button class="btn btn-primary" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button></div>
                             </div>
                         </div>
                     </div>
@@ -381,15 +342,9 @@
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img src="assets/img/portfolio/6-full.jpg" class="img-fluid d-block mx-auto">
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
-                                        cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-unstyled">
-                                        <li>Date: January 2017</li>
-                                        <li>Client: Threads</li>
-                                        <li>Category: Illustration</li>
-                                    </ul><button class="btn btn-primary" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button></div>
+                                    <h2 class="text-uppercase">Instagramable</h2>
+                                    <p class="item-intro text-muted">surganya Bagi Pecinta Photografi</p><img src="assets/img/portfolio/6-thumbnail.jpg" class="img-fluid d-block mx-auto">
+                                    <button class="btn btn-primary" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button></div>
                             </div>
                         </div>
                     </div>

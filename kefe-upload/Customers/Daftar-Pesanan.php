@@ -95,9 +95,9 @@ $user_id=$_SESSION['Meja'];
                 aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="nav navbar-nav ml-auto text-uppercase">
-                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="index.php">Halaman Awal</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="index.php?#about">Tentang kami</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="index.php?#contact">Lokasi</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="../index.php">Halaman Awal</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="../index.php?#about">Tentang kami</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="../index.php?#contact">Lokasi</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="Pesan.php">Pesan</a></li>
                 </ul>
             </div>
